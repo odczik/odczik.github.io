@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>  
+    <canvas id="canvas"></canvas>
+    
+    
+    <script>
+        let colors = ["#ff7d7d","#ffcf7d","#fffb7d","#c9ff7d","#84ff7d","#7dffd2","#7df9ff","#7da8ff","#b57dff","#ff7dff"]
+        let color
+        window.onload = function(){
+            init()
+            window.addEventListener("resize", init,false)
+            color = colors[Math.floor(Math.random() * colors.length)]
+        }
+        function pickColor(){
+            color = colors[Math.floor(Math.random() * colors.length)]
+        }
+        function init(){
+            const canvas = document.getElementById("canvas")
+            let ctx = canvas.getContext("2d")
+            let myWidth = window.innerWidth
+            let myHeight = window.innerHeight
+            ctx.canvas.width = myWidth
+            ctx.canvas.height = myHeight
+
+            ctx.font = "100px sans-serif";
+            ctx.fillStyle = "black";
+            ctx.textAlign = "center";
+            ctx.fillText("404", canvas.width/2, canvas.height/6);
+            ctx.font = "50px sans-serif";
+            ctx.fillStyle = "black";
+            ctx.textAlign = "center";
+            ctx.fillText("Page Not Found", canvas.width/2, canvas.height/4);
+        }
+        
+        window.addEventListener("mousemove", function(e) {
+            drawOnMove(e)
+        })
+        window.addEventListener("click", function() {
+            pickColor()
+        })
+
+        function drawOnMove(e){
+            const canvas = document.getElementById("canvas")
+            let ctx = canvas.getContext("2d")
+            ctx.beginPath()
+            ctx.arc(e.x, e.y, 40, 0, 2 * Math.PI)
+            ctx.fillStyle = color
+            ctx.fill()
+        }
+    </script>
+</body>
+</html>
