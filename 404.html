@@ -43,6 +43,10 @@
             ctx.fillStyle = "black";
             ctx.textAlign = "center";
             ctx.fillText("Page Not Found", canvas.width/2, canvas.height/4);
+            ctx.font = "30px sans-serif";
+            ctx.fillStyle = "black";
+            ctx.textAlign = "center";
+            ctx.fillText("Press SPACE To Go On Home Page", canvas.width/2, canvas.height/3);
         }
         
         window.addEventListener("mousemove", function(e) {
@@ -50,6 +54,11 @@
         })
         window.addEventListener("click", function() {
             pickColor()
+        })
+        window.addEventListener("keypress", function(e){
+            if(e.keyCode === 32){
+                window.open("https://www.odczik.tk/#home")
+            }
         })
 
         function drawOnMove(e){
