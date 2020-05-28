@@ -1,0 +1,252 @@
+body {
+    background-color: rgb(73, 73, 73);
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 400px;
+    overflow: hidden;
+    height: 100vh;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav {
+    margin-left: 550px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    right: 28px;
+
+    position: relative;
+}
+nav a {
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+nav a:hover {
+    color: black;
+}
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out .2s;
+}
+nav a:hover::before {
+    width: 100%;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+.navbar {
+    top: 1%;
+    position: fixed;
+    display: flex;
+    background: rgba(0, 204, 255, 0.6);
+    border-radius: 40px;
+    transition: .2s;
+    z-index: 5;
+}
+.navbar:hover {
+    background: rgba(0, 204, 255, 1);
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+section h1 {
+    color: white;
+    font-size: 60px;
+}
+section p {
+    color: white;
+    font-size: 30px;
+}
+section b {
+    color: rgb(0, 215, 253);
+    font-size: 35px;
+    transition: all ease-in-out .4s;
+}
+section b:hover {
+    color: rgb(255, 50, 50);
+}
+
+.item-grid {
+    max-width: 900px;
+    margin: 100px auto;
+    position: relative;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+.item {
+    position: relative;
+    float: left;
+    width: 33.33333%;
+    background-color: #000;
+    overflow: hidden;
+    cursor: pointer;
+}
+.item:after {
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(2) translateX(-75%) translateY(-75%) translateZ(0) rotate(-28deg);
+    transition: transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.item:hover:after {
+    transform: scale(2) translateX(0%) translateY(0%) translateZ(0) rotate(-28deg);
+}
+.item:hover .item-image {
+    transform: scale(1) translateZ(0);
+}
+.item:hover .item-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+.item-image {
+    height: auto;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 750ms cubic-bezier(0.12, 1, 0.32, 1);
+}
+.item-image::before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+    overflow: hidden;
+}
+.item-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+}
+.item-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition-delay: 300ms;
+    transform: translateY(-20%);
+}
+.item-text-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.item-text-title {
+    font-size: 36px;
+    padding: 0 15px;
+    margin: 5px 0 0 0;
+}
+.item-text-dek {
+    font-size: 16px;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.projectsSection {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+.projectsSection h1 {
+    transform: translate(0, 400%);
+    color: white;
+    font-size: 60px;
+}
+.projectsSection p {
+    font-size: 20px;
+}
+.item-grid {
+    transform: translate(0, 120%);
+}
+.hamburger2 {
+    opacity: 0;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow: visible;
+    }
+    .navbar {
+        opacity: 0;
+    }
+    .projectsSection h1 {
+        transform: translate(0, 300%);
+        color: white;
+        font-size: 60px;
+    }
+    .projectsSection p {
+        font-size: 15px;
+    }
+    .projectsSection h2 {
+        font-size: 25px;
+    }
+    section p {
+        font-size: 25px;
+    }
+    section b {
+        font-size: 30px;
+    }
+}
