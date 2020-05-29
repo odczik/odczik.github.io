@@ -1,9 +1,10 @@
 body {
-    background-color: rgb(73, 73, 73);
+    background-color: #333;
+    background-size: cover;
     margin: 0;
     font-family: sans-serif;
     font-weight: 400px;
-    overflow: hidden;
+
     height: 100vh;
 }
 html {
@@ -206,7 +207,7 @@ section b:hover {
     height: 100vh;
 }
 .projectsSection h1 {
-    transform: translate(0, 400%);
+    transform: translate(0, 300%);
     color: white;
     font-size: 60px;
 }
@@ -214,11 +215,30 @@ section b:hover {
     font-size: 20px;
 }
 .item-grid {
-    transform: translate(0, 120%);
+    transform: translate(0, 40%);
 }
 .hamburger2 {
     opacity: 0;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(37, 189, 216);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(5, 218, 255);
+  }
 
 
 
@@ -249,4 +269,81 @@ section b:hover {
     section b {
         font-size: 30px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+.spinner {
+    position: relative;
+    top: 35%;
+
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+
+    z-index: 999;
+  }
+  
+  .spinner > div {
+    background-color: rgb(32, 208, 224);
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .9);
+    position: fixed;
+    z-index: 998;
+    left: 0;
+    top: 0;
 }

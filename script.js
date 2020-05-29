@@ -1,6 +1,16 @@
+window.addEventListener("load", function(){
+    var preloader = document.getElementById("overlay")
+
+    preloader.style.display = "none"
+})
+
+
+
 const ubetr0nImg = document.getElementById("ubetr0n-img")
 const snakeImg = document.getElementById("snake-img")
 const webhookImg = document.getElementById("webhook-img")
+const notfoundImg = document.getElementById("404page-img")
+const soonImg = document.getElementById("soon-img")
 
 ubetr0nImg.onclick = function(){
     window.open("https://home.ubetr0n.tk","_self")
@@ -10,4 +20,16 @@ snakeImg.onclick = function(){
 }
 webhookImg.onclick = function(){
     window.open("https://webhook.odczik.tk","_self")
+}
+notfoundImg.onclick = function(){
+    window.open("https://odczik.tk/404page","_self")
+}
+
+
+
+
+
+
+soonImg.onclick = function(){
+    window.open("https://odczik.tk","_self")
 }
