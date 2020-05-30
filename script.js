@@ -10,6 +10,8 @@ const ubetr0nImg = document.getElementById("ubetr0n-img")
 const snakeImg = document.getElementById("snake-img")
 const webhookImg = document.getElementById("webhook-img")
 const notfoundImg = document.getElementById("404page-img")
+const virusImg = document.getElementById("virus-img")
+
 const soonImg = document.getElementById("soon-img")
 
 ubetr0nImg.onclick = function(){
@@ -23,6 +25,9 @@ webhookImg.onclick = function(){
 }
 notfoundImg.onclick = function(){
     window.open("https://odczik.tk/404page","_self")
+}
+virusImg.onclick = function(){
+    window.open("https://virus.odczik.tk","_self")
 }
 
 
