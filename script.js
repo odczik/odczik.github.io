@@ -18,16 +18,16 @@ ubetr0nImg.onclick = function(){
     window.open("https://home.ubetr0n.tk","_self")
 }
 snakeImg.onclick = function(){
-    window.open("https://snake.odczik.tk","_self")
+    window.open("https://odczik.tk/snake/index.html","_self")
 }
 webhookImg.onclick = function(){
-    window.open("https://webhook.odczik.tk","_self")
+    window.open("https://odczik.tk/discord-webhook-sender/index.html","_self")
 }
 notfoundImg.onclick = function(){
     window.open("https://odczik.tk/404page","_self")
 }
 virusImg.onclick = function(){
-    window.open("https://virus.odczik.tk","_self")
+    window.open("https://odczik.tk/harmless-virus/index.html","_self")
 }
 
 
