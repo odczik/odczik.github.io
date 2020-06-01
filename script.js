@@ -16,22 +16,22 @@ const chatImg = document.getElementById("chat-img")
 const soonImg = document.getElementById("soon-img")
 
 ubetr0nImg.onclick = function(){
-    window.open("https://home.ubetr0n.tk","_self")
+    window.open("https://ubetr0n.tk","_self")
 }
 snakeImg.onclick = function(){
-    window.open("https://odczik.tk/snake/index.html","_self")
+    window.open("https://odczik.tk/snake","_self")
 }
 webhookImg.onclick = function(){
-    window.open("https://odczik.tk/discord-webhook-sender/index.html","_self")
+    window.open("https://odczik.tk/webhook","_self")
 }
 notfoundImg.onclick = function(){
     window.open("https://odczik.tk/404page","_self")
 }
 virusImg.onclick = function(){
-    window.open("https://odczik.tk/harmless-virus/index.html","_self")
+    window.open("https://odczik.tk/virus","_self")
 }
 chatImg.onclick = function(){
-    window.open("https://odczik.tk/chat/index.html","_self")
+    window.open("https://odczik.tk/chat","_self")
 }
 
 
