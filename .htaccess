@@ -1,1 +1,3 @@
 ErrorDocument 404 /404.html
+
+RewriteRule ^snake/?$ /snake/index.html/
