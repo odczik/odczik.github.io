@@ -19,7 +19,7 @@ function newWindow(){
         alert("Virus Deactivated")
     })
     setInterval(function(){
-        let rand = Math.floor(Math.random() * screen.width) + screen.width
+        let rand = Math.floor(Math.random() * screen.width)
         let rand2 = Math.floor(Math.random() * screen.height)
         openedWindow.moveTo(rand, rand2)
 
