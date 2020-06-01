@@ -5,4 +5,4 @@ RewriteRule ^webhook/?$ odczik-discord-webhook-sender/index.html
 RewriteRule ^virus/?$ odczik-harmless-virus/index.html
 RewriteRule ^chat/?$ odczik-chat/index.html
 
-RewriteRule ^chat/?$ odczik-chat/index.html [R]
+RewriteRule ^test/?$ odczik-chat/index.html [R]
