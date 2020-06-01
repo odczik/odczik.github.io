@@ -1,6 +1,1 @@
 ErrorDocument 404 /404.html
-
-RewriteRule ^snake/?$ /odczik-snake/index.html/
-RewriteRule ^webhook/?$ /odczik-discord-webhook-sender/index.html/
-RewriteRule ^virus/?$ /odczik-harmless-virus/index.html/
-RewriteRule ^chat/?$ /odczik-chat/index.html/
