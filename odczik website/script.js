@@ -19,19 +19,19 @@ ubetr0nImg.onclick = function(){
     window.open("https://ubetr0n.tk","_self")
 }
 snakeImg.onclick = function(){
-    window.open("https://odczik.tk/snake","_self")
+    window.open("https://odczik.tk/odczik-snake/index.html","_self")
 }
 webhookImg.onclick = function(){
-    window.open("https://odczik.tk/webhook","_self")
+    window.open("https://odczik.tk/odczik-discord-webhook-sender/index.html","_self")
 }
 notfoundImg.onclick = function(){
     window.open("https://odczik.tk/404page","_self")
 }
 virusImg.onclick = function(){
-    window.open("https://odczik.tk/virus","_self")
+    window.open("https://odczik.tk/odczik-harmless-virus/index.html","_self")
 }
 chatImg.onclick = function(){
-    window.open("https://odczik.tk/chat","_self")
+    window.open("https://odczik.tk/odczik-chat/index.html","_self")
 }
 
 
