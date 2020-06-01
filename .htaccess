@@ -1,5 +1,7 @@
 ErrorDocument 404 /404.html
 
+RewriteEngine On
+
 RewriteRule ^snake/?$ /odczik-snake/index.html/
 RewriteRule ^webhook/?$ /odczik-discord-webhook-sender/index.html
 RewriteRule ^virus/?$ /odczik-harmless-virus/index.html
