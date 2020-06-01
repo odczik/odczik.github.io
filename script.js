@@ -11,6 +11,7 @@ const snakeImg = document.getElementById("snake-img")
 const webhookImg = document.getElementById("webhook-img")
 const notfoundImg = document.getElementById("404page-img")
 const virusImg = document.getElementById("virus-img")
+const chatImg = document.getElementById("chat-img")
 
 const soonImg = document.getElementById("soon-img")
 
@@ -28,6 +29,9 @@ notfoundImg.onclick = function(){
 }
 virusImg.onclick = function(){
     window.open("https://odczik.tk/harmless-virus/index.html","_self")
+}
+chatImg.onclick = function(){
+    window.open("https://odczik.tk/chat/index.html","_self")
 }
 
 
